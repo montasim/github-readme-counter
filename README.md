@@ -128,6 +128,8 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of cond
 
 ## 👥 Contributors
 
+[![Contributors Display](https://badges.pufler.dev/contributors/montasim/github-readme-counter?size=50&padding=5&perRow=10&bots=true)](https://badges.pufler.dev)
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
