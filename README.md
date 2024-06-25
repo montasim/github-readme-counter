@@ -72,7 +72,7 @@ To change the background color to white (`FFFFFF`) and the text color to blue (`
 http://localhost:3000/count.svg?backgroundColor=FFFFFF&textColor=0000FF
 ```
 
-![Default Visitor Count](./customization-example.png)
+![Customized Visitor Count](./customized-example.png)
 
 ### Notes on Customization
 
