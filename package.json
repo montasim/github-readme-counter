@@ -1,0 +1,49 @@
+{
+  "name": "github-readme-counter",
+  "version": "0.0.1",
+  "description": "This project provides a simple web service that generates a dynamic SVG image showing a visitor count. It increments a counter every time the endpoint is called and returns an SVG image displaying the updated count.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.x",
+    "yarn": ">=1.22.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "author": {
+    "name": "Mohammad Montasim -Al- Mamun Shuvo",
+    "email": "montasimmamun@gmail.com",
+    "mobile": "+8801722815469",
+    "portfolio": "https://montasim-dev.web.app/",
+    "linkedin": "https://www.linkedin.com/in/montasim",
+    "github": "https://github.com/montasim"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "github",
+    "svg",
+    "visitor counter",
+    "web service",
+    "api",
+    "node.js",
+    "dynamic svg",
+    "real-time",
+    "server",
+    "web application",
+    "counter",
+    "customizable svg"
+  ],
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
