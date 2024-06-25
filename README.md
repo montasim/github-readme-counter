@@ -1,5 +1,32 @@
 # GitHub Readme Counter
 
+<!-- repository summary badges start -->
+<div>
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/montasim/github-readme-counter?style=social">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/montasim/github-readme-counter?style=social">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/montasim/github-readme-counter?style=social">
+    <img alt="build update badge" src="https://img.shields.io/github/actions/workflow/github-readme-counter/montasim/montasim/update-readme.yml"/>
+    <img alt="language badge" src="https://img.shields.io/github/languages/count/montasim/github-readme-counter"/>
+    <img alt="top language badge" src="https://img.shields.io/github/languages/top/montasim/github-readme-counter">
+    <img alt="goto badge" src="https://img.shields.io/github/search/montasim/github-readme-counter/goto">
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/montasim/github-readme-counter">
+    <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/montasim/github-readme-counter">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/montasim/github-readme-counter">
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/montasim/github-readme-counter/total">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/montasim/github-readme-counter">
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/montasim/github-readme-counter">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/montasim/github-readme-counter">
+    <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/montasim/github-readme-counter">
+    <img alt="GitHub milestones" src="https://img.shields.io/github/milestones/open/montasim/github-readme-counter">
+    <img alt="GitHub milestones" src="https://img.shields.io/github/milestones/closed/montasim/github-readme-counter">
+    <img alt="GitHub" src="https://img.shields.io/github/license/montasim/github-readme-counter">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/montasim/github-readme-counter">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/montasim/github-readme-counter">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/montasim/github-readme-counter">
+    <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/montasim/github-readme-counter">
+</div>
+<!-- repository summary badges end -->
+
 This project provides a simple web service that generates a dynamic SVG image showing a visitor count. It increments a counter every time the endpoint is called and returns an SVG image displaying the updated count.
 
 ## 🛠️ Requirements to Run the Project
