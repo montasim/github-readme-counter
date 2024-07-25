@@ -1,0 +1,44 @@
+####################################################
+# EditorConfig Configuration File
+####################################################
+# This file defines a consistent coding style across various editors and IDEs for your project.
+# The settings included here apply to multiple file types including JavaScript, TypeScript, JSON, and Markdown.
+
+####################################################
+# Global Settings
+# Purpose: Define fundamental character encoding and whitespace handling.
+# Scope: Applies to all files in the project unless overridden by specific settings.
+####################################################
+root = true
+
+####################################################
+# JavaScript and TypeScript Files
+# Purpose: Maintain a consistent style for JavaScript and TypeScript codebases.
+# Use: Applies settings for character set, indentation, line endings, and other whitespace handling.
+####################################################
+[*.{js,jsx,ts,tsx}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 80
+
+####################################################
+# JSON Files
+# Purpose: Specific settings for JSON files, which often use different indentation.
+# Use: Ensure that JSON files use 2 spaces for indentation and end with a newline.
+####################################################
+[*.json]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+####################################################
+# Markdown Files
+# Purpose: Handle trailing whitespace differently as it can be significant in Markdown.
+# Use: Disable trailing whitespace trimming for Markdown files.
+####################################################
+[*.md]
+trim_trailing_whitespace = false
