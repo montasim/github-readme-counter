@@ -1,11 +1,13 @@
-const app = require('./src/app.js');
+/**
+ * Server Entry Point
+ * Starts the application server
+ * This is the main entry point defined in package.json
+ */
 
-const port = process.env.port || process.env.PORT;
+const startServer = require('./src/index');
 
-const server = app.listen(port, async () => {
-  try {
-    console.info(`Listening to port ${server.address().port}`);
-  } catch (error) {
-    console.error(`Failed to start server on port ${server.address().port}`);
-  }
-});
+// Get port from environment variables or use default
+const port = process.env.PORT || process.env.port || 3000;
+
+// Start the server
+startServer(port);
