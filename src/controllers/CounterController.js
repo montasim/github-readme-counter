@@ -45,16 +45,20 @@ class CounterController {
    */
   async getCounterSVG(req, res, next) {
     try {
-      // Validate and sanitize query parameters
-      const sanitizedParams = sanitizeQueryParams(req.query);
+      // Support both new short names (bg, tc) and old long names (backgroundColor, textColor)
+      // New parameters take precedence over old ones
+      const backgroundColor = req.query.bg || req.query.backgroundColor || DEFAULT_COLORS.BACKGROUND;
+      const textColor = req.query.tc || req.query.textColor || DEFAULT_COLORS.TEXT;
 
-      // Get colors from query params or use defaults
-      const backgroundColor = sanitizedParams.backgroundColor || DEFAULT_COLORS.BACKGROUND;
-      const textColor = sanitizedParams.textColor || DEFAULT_COLORS.TEXT;
+      // Validate and sanitize query parameters
+      const sanitizedParams = sanitizeQueryParams({
+        backgroundColor,
+        textColor
+      });
 
       // Format colors with # prefix
-      const formattedBackgroundColor = formatHexColor(backgroundColor);
-      const formattedTextColor = formatHexColor(textColor);
+      const formattedBackgroundColor = formatHexColor(sanitizedParams.backgroundColor);
+      const formattedTextColor = formatHexColor(sanitizedParams.textColor);
 
       // Increment counter
       const counter = await this.counterService.incrementCounter();

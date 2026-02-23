@@ -81,12 +81,20 @@ This service allows you to customize the appearance of the SVG image through URL
 
 The SVG image's background and text colors are customizable through URL parameters. Here are the parameters you can use:
 
-- `backgroundColor`: Specifies the hex code for the background color of the SVG. The default color is black (`000000`).
-- `textColor`: Specifies the hex code for the color of the text displaying the count. The default color is magenta (`EB008B`).
+- `bg`: Specifies the hex code for the background color of the SVG. The default color is black (`000000`).
+- `tc`: Specifies the hex code for the color of the text displaying the count. The default color is magenta (`EB008B`).
+
+> **Note:** For backward compatibility, the old parameter names (`backgroundColor` and `textColor`) are still supported. The new short names (`bg` and `tc`) take precedence if both are provided.
 
 #### Example Usage
 
 To change the background color to white (`FFFFFF`) and the text color to blue (`0000FF`), you would access the service using the following URL:
+
+```bash
+http://localhost:3000/count.svg?bg=FFFFFF&tc=0000FF
+```
+
+Or using the old parameter names (still supported):
 
 ```bash
 http://localhost:3000/count.svg?backgroundColor=FFFFFF&textColor=0000FF
